@@ -6,33 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <script type="module" src="./assets/components/switch-material/toggle-switch/toggle-switch.esm.js"></script>
-    <script nomodule src="./assets/components/switch-material/esm/toggle-switch.js"></script>
+    <script type="module" src="./assets/js/components/switch-material/toggle-switch/toggle-switch.esm.js"></script>
+    <script nomodule src="./assets/js/components/switch-material/esm/toggle-switch.js"></script>
     <title>Switch (Material)</title>
 </head>
 
 <body>
     <section>
-        <div class="switch-container switch-container--m2">
-            <div class="switch-wrapper">
-                <switch-material></switch-material>
-                <switch-material switch="on"></switch-material>
+        <div class="container">
+            <div>
+                <div class="switch-container switch-container--m2">
+                    <div class="switch-wrapper">
+                        <switch-material></switch-material>
+                        <switch-material switch="on"></switch-material>
+                    </div>
+                    <div class="switch-wrapper">
+                        <switch-material disabled></switch-material>
+                        <switch-material switch="on" disabled></switch-material>
+                    </div>
+                </div>
+                <div class="switch-container switch-container--m3">
+                    <div class="switch-wrapper">
+                        <switch-material theme="material-3"></switch-material>
+                        <switch-material theme="material-3" switch="on"></switch-material>
+                    </div>
+                    <div class="switch-wrapper">
+                        <switch-material theme="material-3" disabled></switch-material>
+                        <switch-material theme="material-3" switch="on" disabled></switch-material>
+                    </div>
+                </div>
             </div>
-            <div class="switch-wrapper">
-                <switch-material disabled></switch-material>
-                <switch-material switch="on" disabled></switch-material>
-            </div>
-        </div>
-        <div class="switch-container switch-container--m3">
-            <div class="switch-wrapper">
-                <switch-material theme="material-3"></switch-material>
-                <switch-material theme="material-3" switch="on"></switch-material>
-            </div>
-            <div class="switch-wrapper">
-                <switch-material theme="material-3" disabled></switch-material>
-                <switch-material theme="material-3" switch="on" disabled></switch-material>
-            </div>
+            <span class="switch-result">-</span>
         </div>
     </section>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
