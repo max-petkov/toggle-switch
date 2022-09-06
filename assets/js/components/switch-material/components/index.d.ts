@@ -1,5 +1,5 @@
-/* ToggleSwitch custom elements */
-export { SwitchMaterial as SwitchMaterial } from '../types/components/toggle-switch/switch-material';
+/* components custom elements */
+export { SwitchMaterial as SwitchMaterial } from '../types/components/switch-material/switch-material';
 
 /**
  * Used to manually set the base path where assets can be found.

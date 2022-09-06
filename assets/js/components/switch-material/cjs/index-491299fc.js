@@ -20,7 +20,7 @@ function _interopNamespace(e) {
   return Object.freeze(n);
 }
 
-const NAMESPACE = 'toggle-switch';
+const NAMESPACE = 'components';
 
 let scopeId;
 let hostTagName;

@@ -1,4 +1,4 @@
-const NAMESPACE = 'toggle-switch';
+const NAMESPACE = 'components';
 
 let scopeId;
 let hostTagName;

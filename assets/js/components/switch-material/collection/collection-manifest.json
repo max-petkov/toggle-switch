@@ -1,6 +1,6 @@
 {
   "entries": [
-    "./components/toggle-switch/switch-material.js"
+    "./components/switch-material/switch-material.js"
   ],
   "compiler": {
     "name": "@stencil/core",

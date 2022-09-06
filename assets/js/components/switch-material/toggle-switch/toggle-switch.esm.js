@@ -1,1 +1,0 @@
-import{p as t,b as e}from"./p-f2f27d8d.js";(()=>{const e=import.meta.url,s={};return""!==e&&(s.resourcesUrl=new URL(".",e).href),t(s)})().then((t=>e([["p-58688be2",[[1,"switch-material",{switch:[1537],disabled:[1540],theme:[1537]}]]]],t)));
