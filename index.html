@@ -18,36 +18,36 @@
     <section>
         <div class="container">
             <div>
-                <div class="switch-container switch-container--m2">
+                <div class="switch-container">
                     <div class="wrapper">
                         <div class="switch-wrapper">
-                            <switch-material data-target="result--left"></switch-material>
-                            <switch-material switch="on" data-target="result--right"></switch-material>
+                            <switch-material data-switch="1"></switch-material>
+                            <switch-material disabled></switch-material>
                         </div>
-                        <p class="result result--left"></p>
+                        <p class="result"></p>
                     </div>
                     <div class="wrapper">
                         <div class="switch-wrapper">
-                            <switch-material disabled></switch-material>
+                            <switch-material switch="on" data-switch="2"></switch-material>
                             <switch-material switch="on" disabled></switch-material>
                         </div>
-                        <p class="result result--right is-active" data-target="switch-1"></p>
+                        <p class="result is-active"></p>
                     </div>
                 </div>
-                <div class="switch-container switch-container--m3">
+                <div class="switch-container">
                     <div class="wrapper">
                         <div class="switch-wrapper">
-                            <switch-material data-target="result--left" theme="material-3"></switch-material>
-                            <switch-material data-target="result--right" theme="material-3" switch="on"></switch-material>
+                            <switch-material theme="material-3" data-switch="3"></switch-material>
+                            <switch-material theme="material-3" disabled></switch-material>
                         </div>
-                        <p class="result result--left"></p>
+                        <p class="result"></p>
                     </div>
                     <div class="wrapper">
                         <div class="switch-wrapper">
-                            <switch-material theme="material-3" disabled></switch-material>
+                            <switch-material theme="material-3" switch="on" data-switch="4"></switch-material>
                             <switch-material theme="material-3" switch="on" disabled></switch-material>
                         </div>
-                        <p class="result result--right is-active"></p>
+                        <p class="result is-active"></p>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,24 @@
 function changeMode() {
-  const switches = document.querySelectorAll("switch-material");
-
+  const switches = document.querySelectorAll("switch-material:not([disabled])");
 
   switches.forEach((switchMaterial) => {
+    const result = switchMaterial.closest(".wrapper").lastElementChild;
+    const setResult = () => {
+      result.classList.add("is-visible");
+      if (switchMaterial.getAttribute("switch") === "on")
+        result.textContent = "on";
+      else result.textContent = "off";
+    };
+
+    setTimeout(setResult, 300);
+
     switchMaterial.addEventListener("switch", function (e) {
       const isActive = e.detail.isActive;
-      const targetResult = "." + this.getAttribute("data-target");
-      const result = this.closest(".switch-container").querySelector(targetResult);
+      const result = this.closest(".wrapper").lastElementChild;
 
-      const displayResult = () => {
+      const results = document.querySelectorAll(".result");
+
+      const updateResult = () => {
         if (isActive) {
           result.textContent = "on";
           result.classList.add("is-active");
@@ -16,10 +26,23 @@ function changeMode() {
           result.textContent = "off";
           result.classList.remove("is-active");
         }
+
+        changeThemeMode();
+
+        function changeThemeMode() {
+          const areAllSame = [...results].every(
+            (result) => result.textContent === results[0].textContent
+          );
+
+          if (areAllSame) {
+            const themeMode =
+              results[0].textContent === "on" ? "light" : "dark";
+            switches.forEach((sw) => sw.setAttribute("theme-mode", themeMode));
+          }
+        }
       };
 
-      displayResult();
-
+      updateResult();
     });
   });
 }
