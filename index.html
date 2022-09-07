@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
     <script type="module" src="./assets/js/components/switch-material/components/components.esm.js"></script>
     <script nomodule src="./assets/js/components/switch-material/esm/components.js"></script>
@@ -16,30 +19,42 @@
         <div class="container">
             <div>
                 <div class="switch-container switch-container--m2">
-                    <div class="switch-wrapper">
-                        <switch-material></switch-material>
-                        <switch-material switch="on"></switch-material>
+                    <div class="wrapper">
+                        <div class="switch-wrapper">
+                            <switch-material data-target="result--left"></switch-material>
+                            <switch-material switch="on" data-target="result--right"></switch-material>
+                        </div>
+                        <p class="result result--left"></p>
                     </div>
-                    <div class="switch-wrapper">
-                        <switch-material disabled></switch-material>
-                        <switch-material switch="on" disabled></switch-material>
+                    <div class="wrapper">
+                        <div class="switch-wrapper">
+                            <switch-material disabled></switch-material>
+                            <switch-material switch="on" disabled></switch-material>
+                        </div>
+                        <p class="result result--right is-active" data-target="switch-1"></p>
                     </div>
                 </div>
                 <div class="switch-container switch-container--m3">
-                    <div class="switch-wrapper">
-                        <switch-material theme="material-3"></switch-material>
-                        <switch-material theme="material-3" switch="on"></switch-material>
+                    <div class="wrapper">
+                        <div class="switch-wrapper">
+                            <switch-material data-target="result--left" theme="material-3"></switch-material>
+                            <switch-material data-target="result--right" theme="material-3" switch="on"></switch-material>
+                        </div>
+                        <p class="result result--left"></p>
                     </div>
-                    <div class="switch-wrapper">
-                        <switch-material theme="material-3" disabled></switch-material>
-                        <switch-material theme="material-3" switch="on" disabled></switch-material>
+                    <div class="wrapper">
+                        <div class="switch-wrapper">
+                            <switch-material theme="material-3" disabled></switch-material>
+                            <switch-material theme="material-3" switch="on" disabled></switch-material>
+                        </div>
+                        <p class="result result--right is-active"></p>
                     </div>
                 </div>
             </div>
-            <span class="switch-result">-</span>
         </div>
     </section>
 
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
