@@ -1,0 +1,21 @@
+{
+  "entries": [
+    "./components/link-css-eight/link-css-eight.js",
+    "./components/link-css-five/link-css-five.js",
+    "./components/link-css-four/link-css-four.js",
+    "./components/link-css-nine/link-css-nine.js",
+    "./components/link-css-one/link-css-one.js",
+    "./components/link-css-seven/link-css-seven.js",
+    "./components/link-css-six/link-css-six.js",
+    "./components/link-css-three/link-css-three.js",
+    "./components/link-css-two/link-css-two.js",
+    "./components/mafanfa-link/mafanfa-link.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.17.3",
+    "typescriptVersion": "4.5.4"
+  },
+  "collections": [],
+  "bundles": []
+}

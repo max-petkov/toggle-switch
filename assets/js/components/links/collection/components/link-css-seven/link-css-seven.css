@@ -1,0 +1,50 @@
+.link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  color: #121212;
+  pointer-events: all;
+}
+
+.link::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background-color: #121212;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.link:hover:before {
+  opacity: 1;
+  animation: line-up 0.3s ease forwards;
+}
+
+@keyframes line-up {
+  0% {
+    transform-origin: 50% 100%;
+    transform: scale3d(1, 0.045, 1);
+  }
+
+  50% {
+    transform-origin: 50% 100%;
+    transform: scale3d(1, 1, 1);
+  }
+
+  51% {
+    transform-origin: 50% 0%;
+    transform: scale3d(1, 1, 1);
+  }
+
+  100% {
+    transform-origin: 50% 0%;
+    transform: scale3d(1, 0.045, 1);
+  }
+}

@@ -1,0 +1,60 @@
+.mafanfa-link {
+  position: relative;
+  display: flex;
+  padding: 16px 64px;
+  border: none;
+  border-radius: 48px;
+  text-decoration: none;
+  color: #121212;
+  font-size: 32px;
+  overflow: hidden;
+}
+
+.mafanfa-link.in {
+  --anim-name: move;
+}
+
+.mafanfa-link .mafanfa-letter {
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-animation: var(--anim-name, none) 0.7s linear forwards 0.18s;
+  animation: var(--anim-name, none) 0.7s linear forwards 0.18s;
+}
+
+@-webkit-keyframes move {
+  30%,
+  36% {
+    transform: translateY(calc(-6px * var(--trans-y))) translateZ(0)
+      rotate(calc(-13deg * var(--rot) * var(--rot-dir)));
+  }
+
+  50% {
+    transform: translateY(calc(3px * var(--trans-y))) translateZ(0)
+      rotate(calc(6deg * var(--rot) * var(--rot-dir)));
+  }
+
+  70% {
+    transform: translateY(calc(-2px * var(--trans-y))) translateZ(0)
+      rotate(calc(-3deg * var(--rot) * var(--rot-dir)));
+  }
+}
+
+@keyframes move {
+  30%,
+  36% {
+    transform: translateY(calc(-6px * var(--trans-y))) translateZ(0)
+      rotate(calc(-13deg * var(--rot) * var(--rot-dir)));
+  }
+
+  50% {
+    transform: translateY(calc(3px * var(--trans-y))) translateZ(0)
+      rotate(calc(6deg * var(--rot) * var(--rot-dir)));
+  }
+
+  70% {
+    transform: translateY(calc(-2px * var(--trans-y))) translateZ(0)
+      rotate(calc(-3deg * var(--rot) * var(--rot-dir)));
+  }
+}

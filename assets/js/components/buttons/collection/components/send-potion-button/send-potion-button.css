@@ -1,0 +1,65 @@
+.send-potion-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  align-self: center;
+  position: relative;
+  background-color: #8330c2;
+  border-radius: 40px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.send-potion-btn__content-wrapper {
+  position: relative;
+  font-size: 20px;
+  padding: 16px 32px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+  font-family: inherit;
+}
+
+.send-potion-btn__content-wrapper svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+}
+
+.send-potion-btn__ripples-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  pointer-events: none;
+}
+
+.send-potion-btn__ripple {
+  position: absolute;
+  border-radius: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.send-potion-btn__ripple--1 {
+  background-color: #9d4cdb;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.send-potion-btn__ripple--2 {
+  background-color: #b06ae5;
+  transform: translateX(-100%);
+  z-index: 2;
+}

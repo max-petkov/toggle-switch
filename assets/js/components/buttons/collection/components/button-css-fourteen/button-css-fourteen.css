@@ -1,0 +1,51 @@
+.btn {
+  position: relative;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 40px;
+  width: max-content;
+  height: max-content;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+
+  background-color: transparent;
+  color: #121212;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 32px);
+  border-left: 2px solid tomato;
+  border-right: 2px solid turquoise;
+  transition: all 1s;
+  transition-delay: 0.2s;
+}
+
+.btn:hover:before {
+  transform: rotateY(180deg);
+}
+
+.btn:hover:after {
+  transform: rotateX(180deg);
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: calc(100% + 32px);
+  height: 100%;
+  border-top: 2px solid tomato;
+  border-bottom: 2px solid turquoise;
+  transition: all 1s;
+}

@@ -1,0 +1,25 @@
+.btn-pax-js {
+  align-items: center;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  font-weight: 500;
+  height: 112px;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  transition: 0.3s ease;
+  width: 112px;
+}
+.btn-pax-js svg {
+  overflow: visible;
+  position: absolute;
+}
+.btn-pax-js svg path {
+  transform-origin: center;
+}
+.btn-pax-js svg {
+  overflow: visible;
+  position: absolute;
+}

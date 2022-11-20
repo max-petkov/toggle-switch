@@ -1,0 +1,40 @@
+.btn {
+  overflow: hidden;
+  position: relative;
+  padding: 16px 24px;
+  border: 1px solid #3037c2;
+  border-radius: 0;
+  width: max-content;
+  height: max-content;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+
+  background-color: transparent;
+  color: #3037c2;
+
+  cursor: pointer;
+}
+
+.btn::before {
+  content: 'Hover me...';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #3037c2;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.btn:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}

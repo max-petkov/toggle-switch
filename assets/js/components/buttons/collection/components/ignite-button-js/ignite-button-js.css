@@ -1,0 +1,27 @@
+.btn-ignite-vision {
+  position: relative;
+  padding: 80px;
+  border-radius: 50%;
+  background: #e2e6ea;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-ignite-vision .text {
+  width: 137px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transform-origin: center;
+}
+
+.btn-ignite-vision .arrow {
+  width: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+}

@@ -1,0 +1,20 @@
+:root {
+  --ease-magnet: 0.3s;
+}
+
+.magnet-wrapper {
+  display: inline-block;
+}
+
+.btn-magnet {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid #121212;
+  border-radius: 50px;
+  width: max-content;
+  font-family: inherit;
+  font-size: 16px;
+  transition: transform var(--ease-magnet) cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: transparent;
+  cursor: pointer;
+}

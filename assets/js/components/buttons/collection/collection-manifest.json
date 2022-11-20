@@ -1,0 +1,38 @@
+{
+  "entries": [
+    "./components/button-css-eight/button-css-eight.js",
+    "./components/button-css-eleven/button-css-eleven.js",
+    "./components/button-css-fifteen/button-css-fifteen.js",
+    "./components/button-css-five/button-css-five.js",
+    "./components/button-css-four/button-css-four.js",
+    "./components/button-css-fourteen/button-css-fourteen.js",
+    "./components/button-css-mafanfa/button-css-mafanfa.js",
+    "./components/button-css-nine/button-css-nine.js",
+    "./components/button-css-one/button-css-one.js",
+    "./components/button-css-seven/button-css-seven.js",
+    "./components/button-css-six/button-css-six.js",
+    "./components/button-css-sixteen/button-css-sixteen.js",
+    "./components/button-css-ten/button-css-ten.js",
+    "./components/button-css-thirteen/button-css-thirteen.js",
+    "./components/button-css-three/button-css-three.js",
+    "./components/button-css-twelve/button-css-twelve.js",
+    "./components/button-css-two/button-css-two..js",
+    "./components/button-css-wave/button-css-wave.js",
+    "./components/ignite-button-css/ignite-button-css.js",
+    "./components/ignite-button-js/ignite-button-js.js",
+    "./components/magnet-button/magnet-button.js",
+    "./components/pax-css-button/pax-css-button.js",
+    "./components/pax-js-button/pax-js-button.js",
+    "./components/pax-js-button-variant-one/pax-js-button-variant-one.js",
+    "./components/pax-js-button-variant-two/pax-js-button-variant-two.js",
+    "./components/send-potion-button/send-potion-button.js",
+    "./components/zory-button/zory-button.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.17.3",
+    "typescriptVersion": "4.5.4"
+  },
+  "collections": [],
+  "bundles": []
+}
